@@ -48,7 +48,7 @@ NOTE: When the ```/restart``` command is used, the server will restart using thi
 1. Open ```restart.sh``` in a text editor such as Notepad++
 2. On Line 8, put your server start command.
 *Advanced: If your computer has several python versions installed, change the command on Line 5 to match the latest installed version.*
-3. Save and close ```restart.bat```.
+3. Save and close ```restart.sh```.
 
 > Before continuing, create a Discord webhook in a channel of your choice, and keep the link handy.
 
@@ -63,7 +63,7 @@ The setup and configuration is now complete.
 NOTE: When the ```/restart``` command is used, the server will restart using this tool, and will send an alert.
 --- ---
 # Prerequisites Installation
-How to install the packages required for this utility
+How to install the packages required for this utility.
 
 ## Windows Guide
 If Python is not installed already(check by searching Python):
@@ -76,6 +76,8 @@ Install packages:
 3. With CMD still open as administrator, type ```pip3 install requests```. This will install the ```requests``` package.
 4. Now enter ```pip3 install json```
 
+The prereq installation is done.
+
 ## Linux Guide
 Most Linux installations come with Python preinstalled. If yours does not, google a tutorial for your flavor of linux.
 
@@ -84,3 +86,5 @@ Install packages:
 2. Enter ```pip3 help```. This should output a help blob with commands for PyPi, python's package manager. If this does not open, you need to install PyPi using [this guide](https://opensource.com/article/20/3/pip-linux-mac-windows)
 3. In the terminal, type ```pip3 install requests```. This will install the ```requests``` package.
 4. Now enter ```pip3 install json```
+
+The prereq installation is done.
