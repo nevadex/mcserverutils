@@ -5,7 +5,7 @@
 These scripts can be used hand-in-hand to alert someone of a server going down, before attempting to start back up. They are both very light scripts, and should not cause harm to your computer.
 > Compatible with Windows and Linux. Only works with Minecraft server builds that have an option to execute a script at restart(Spigot, Paper, etc)
 
-> Prerequisites: Python3+, pip3 packages ```requests``` and ```json```, and a text editor(Notepad++, Sublime, etc.) [Prereq. install guide here](#-Prerequisites-Installation)
+> Prerequisites: Python3+, pip3 packages ```requests``` and ```json```, and a text editor(Notepad++, Sublime, etc.) [Prereq. install guide here](#Prerequisites-Installation)
 ---
 # Installation Guide
 Assuming the prereqs are already installed, you can continue with the setup.
@@ -33,6 +33,6 @@ Most Linux installations come with Python preinstalled. If yours does not, googl
 
 Install packages:
 1. Open terminal
-2. Enter ```pip3 help```. This should output a help blob with commands for PyPi, python's package manager. If this does not open, you need to install PyPi using [this guide](https://www.liquidweb.com/kb/install-pip-windows/)
+2. Enter ```pip3 help```. This should output a help blob with commands for PyPi, python's package manager. If this does not open, you need to install PyPi using [this guide](https://google.com/404)
 3. In the terminal, type ```pip3 install requests```. This will install the ```requests``` package.
 4. Now enter ```pip3 install json```
