@@ -45,7 +45,7 @@ NOTE: When the ```/restart``` command is used, the server will restart using thi
 4. In the file, set the restart script to ```.\restart.sh```
 
 **Script Setup**
-1. Open ```restart.sh``` in a text editor such as Notepad++
+1. Open ```restart.sh``` in a text editor such as Sublime Text
 2. On Line 8, put your server start command.
 *Advanced: If your computer has several python versions installed, change the command on Line 5 to match the latest installed version.*
 3. Save and close ```restart.sh```.
@@ -53,7 +53,7 @@ NOTE: When the ```/restart``` command is used, the server will restart using thi
 > Before continuing, create a Discord webhook in a channel of your choice, and keep the link handy.
 
 **Alert Setup**
-1. Open ```crash-alert-v2.py``` in a text editor such as Notepad++
+1. Open ```crash-alert-v2.py``` in a text editor such as Sublime Text
 2. On line 7, paste your webhook link inside the doublequotes.
 3. On line 10, put your Minecraft server's name inside the doublequotes. If your server has no name, leave blank.
 4. On line 18, put any users or roles you want to ping. Follow instructions listed inside the file or [this Reddit post](https://www.reddit.com/r/discordapp/comments/61n0sj/pinging_rolesusers_linking_text_channels_through/dfftv3p/). To ping nobody, leave blank.
