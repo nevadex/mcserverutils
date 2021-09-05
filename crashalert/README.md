@@ -11,8 +11,57 @@ These scripts can be used hand-in-hand to alert someone of a server going down, 
 Assuming the prereqs are already installed, you can continue with the setup.
 
 ## Windows Guide
+
+**Initial Setup**
+1. Clone the files ```restart.bat``` and ```crash-alert-v2.py``` from github
+2. Place both files into the Minecraft server directory, the same folder where the ```.jar``` is
+3. Within the server config file(spigot: ```spigot.yml```, etc.), make sure that the server WILL attempt to restart on a crash
+4. In the file, set the restart script to ```.\restart.bat```
+
+**Script Setup**
+1. Open ```restart.bat``` in a text editor such as Notepad++
+2. On Line 8, put your server start command.
+*Advanced: If your computer has several python versions installed, change the command on Line 4 to match the latest installed version.*
+3. Save and close ```restart.bat```.
+
+> Before continuing, create a Discord webhook in a channel of your choice, and keep the link handy.
+
+**Alert Setup**
+1. Open ```crash-alert-v2.py``` in a text editor such as Notepad++
+2. On line 7, paste your webhook link inside the doublequotes.
+3. On line 10, put your Minecraft server's name inside the doublequotes. If your server has no name, leave blank.
+4. On line 18, put any users or roles you want to ping. Follow instructions listed inside the file or [this Reddit post](https://www.reddit.com/r/discordapp/comments/61n0sj/pinging_rolesusers_linking_text_channels_through/dfftv3p/). To ping nobody, leave blank.
+5. Save and close ```crash-alert-v2.py```.
+
+The setup and configuration is now complete.
+NOTE: When the ```/restart``` command is used, the server will restart using this tool, and will send an alert.
+
 ## Linux Guide
----
+
+**Initial Setup**
+1. Clone the files ```restart.sh``` and ```crash-alert-v2.py``` from github
+2. Place both files into the Minecraft server directory, the same folder where the ```.jar``` is
+3. Within the server config file(spigot: ```spigot.yml```, etc.), make sure that the server WILL attempt to restart on a crash
+4. In the file, set the restart script to ```.\restart.sh```
+
+**Script Setup**
+1. Open ```restart.sh``` in a text editor such as Notepad++
+2. On Line 8, put your server start command.
+*Advanced: If your computer has several python versions installed, change the command on Line 5 to match the latest installed version.*
+3. Save and close ```restart.bat```.
+
+> Before continuing, create a Discord webhook in a channel of your choice, and keep the link handy.
+
+**Alert Setup**
+1. Open ```crash-alert-v2.py``` in a text editor such as Notepad++
+2. On line 7, paste your webhook link inside the doublequotes.
+3. On line 10, put your Minecraft server's name inside the doublequotes. If your server has no name, leave blank.
+4. On line 18, put any users or roles you want to ping. Follow instructions listed inside the file or [this Reddit post](https://www.reddit.com/r/discordapp/comments/61n0sj/pinging_rolesusers_linking_text_channels_through/dfftv3p/). To ping nobody, leave blank.
+5. Save and close ```crash-alert-v2.py```.
+
+The setup and configuration is now complete.
+NOTE: When the ```/restart``` command is used, the server will restart using this tool, and will send an alert.
+--- ---
 # Prerequisites Installation
 How to install the packages required for this utility
 
