@@ -26,7 +26,7 @@ try:
     filetowrite = sys.argv[2]
 except:
     print(f"[!] No filename provided! Defaulting to \"server-{version}.jar\"")
-    filetowrite = "server.jar"
+    filetowrite = f"server-{version}.jar"
 
 versionurl = None
 print(f"[*] Operation: Saving {version} server jar to \"{filetowrite}\"")
